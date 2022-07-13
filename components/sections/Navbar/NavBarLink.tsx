@@ -8,7 +8,7 @@ interface Props {
 
 const NavBarLink:FC<Props> = ({ link, text }) =>  {
   return (
-    <div className='text-white font-bold  border-solid border-b-black pb-[0.1rem] mx-4 hover:border-b-2'>
+    <div className='text-blue-600 font-bold  border-solid border-b-black pb-[0.1rem] mx-4 hover:border-b-2'>
         <Link href={link}>{text}</Link>
     </div>
   )
