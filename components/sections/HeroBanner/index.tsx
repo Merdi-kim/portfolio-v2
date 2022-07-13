@@ -25,9 +25,7 @@ const HeroBanner = () => {
           <div className='w-1/2 h-80 flex flex-col justify-center px-16'>
             <TitleCard text='About me'/>
             <p>
-              I am a software engineer with experience in secure and scalable software. 
-              I'm comfortable working with a variety of technologies and I'm always available 
-              to learn and adapt to new technologies along the way. Together in teams, 
+              I am a software engineer with experience in secure and scalable software. I'm comfortable working with a variety of technologies and I'm always available to learn and adapt to new technologies along the way. Together in teams, 
               I have worked on applications with thousands of users. I always focus on providing users with a flawless experience.
             </p>
           </div>
