@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 .titleCard {
-    font-weight: bolder;
-    margin-bottom: 1rem;
-    font-size: 22px;
-    position: relative;
-    padding-left: 22px;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  font-size: 22px;
+  position: relative;
+  padding-left: 22px;
 }
 
 .titleCard::before {
-    position: absolute;
-    left: 0px;
-    top: calc(50% - 2.5px);
-    content: '';
-    width: 20px;
-    height: 5px;
-    background-color: blue;
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 2.5px);
+  content: '';
+  width: 20px;
+  height: 5px;
+  background-color: blue;
 }

@@ -1,7 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import HeroBanner from '../components/sections/HeroBanner'
-import NavBar from '../components/sections/Navbar'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import HeroBanner from '../components/sections/HeroBanner';
+import NavBar from '../components/sections/Navbar';
 
 const Home: NextPage = () => {
   return (
@@ -10,11 +10,10 @@ const Home: NextPage = () => {
         <title>Merkim | Software engineering</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar/>
-      <HeroBanner/>
-     
+      <NavBar />
+      <HeroBanner />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

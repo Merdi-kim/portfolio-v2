@@ -1,13 +1,11 @@
-import { FC } from 'react'
+import { FC } from 'react';
 
 interface Prop {
-    text:string
+  text: string;
 }
 
-const TitleCard:FC<Prop> = ({text}) => {
-  return (
-    <h2 className='titleCard'>{text}</h2>
-  )
-}
+const TitleCard: FC<Prop> = ({ text }) => {
+  return <h2 className="titleCard">{text}</h2>;
+};
 
-export default TitleCard
+export default TitleCard;
