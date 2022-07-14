@@ -31,3 +31,15 @@ export const linksToSocials = [
     link: 'https://www.youtube.com/c/Merkimdev',
   },
 ];
+
+export const softSkills = [
+  "Understanding of teammates",
+  "Laughing outloud",
+  "etc"
+]
+
+export const engineeringSkills = [
+  "Understanding of software architecture",
+  "Clean code implementation and others",
+  "etc"
+]

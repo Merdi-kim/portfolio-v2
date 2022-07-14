@@ -49,7 +49,7 @@ const HeroBanner = () => {
           <SocialLinkCard link={link} image={image} />
         ))}
       </div>
-      <div className="h-8 flex items-center justify-center">^</div>
+      <div className="h-8 flex items-center justify-center"><span className="arrow__down"></span></div>
     </div>
   );
 };
