@@ -40,3 +40,19 @@
   transform: rotate(115deg);
   border-radius: 12px;
 }
+
+.projects {
+  width: 100%;
+  position: relative;
+  margin: 30px;
+}
+
+.projects:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 2px;
+  background-color: black;
+}

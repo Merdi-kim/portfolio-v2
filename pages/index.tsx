@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import HeroBanner from '../components/sections/HeroBanner';
 import NavBar from '../components/sections/Navbar';
+import Projects from '../components/sections/Projects';
 import Skills from '../components/sections/Skills';
 
 const Home: NextPage = () => {
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <NavBar />
       <HeroBanner />
       <Skills />
+      <Projects />
     </div>
   );
 };
