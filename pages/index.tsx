@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
       <NavBar />
       <HeroBanner />
-      <Skills/>
+      <Skills />
     </div>
   );
 };
