@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import HeroBanner from '../components/sections/HeroBanner';
+import Languages from '../components/sections/Languages';
 import NavBar from '../components/sections/Navbar';
 import Projects from '../components/sections/Projects';
 import Skills from '../components/sections/Skills';
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <HeroBanner />
       <Skills />
       <Projects />
+      <Languages />
     </div>
   );
 };
