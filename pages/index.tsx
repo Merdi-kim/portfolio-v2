@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Contact from '../components/sections/Contact';
 import HeroBanner from '../components/sections/HeroBanner';
 import Languages from '../components/sections/Languages';
 import NavBar from '../components/sections/Navbar';
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Skills />
       <Projects />
       <Languages />
+      <Contact />
     </div>
   );
 };
