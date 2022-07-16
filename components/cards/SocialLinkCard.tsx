@@ -11,7 +11,7 @@ const SocialLinkCard: FC<Props> = ({ link, image }) => {
       <img
         src={image}
         alt="social image"
-        className="w-10 h-10 rounded-full object-cover"
+        className="w-5 h-5 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full object-cover"
       />
     </a>
   );

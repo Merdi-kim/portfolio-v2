@@ -1,7 +1,6 @@
 import React from 'react';
-import { linksToSocials } from '../../../data/data';
-import SocialLinkCard from '../../cards/SocialLinkCard';
 import TitleCard from '../../cards/TitleCard';
+import SocialLinks from '../SocialLinks';
 
 const Contact = () => {
   const inputStyle =
@@ -39,11 +38,7 @@ const Contact = () => {
       </form>
       <div className="my-12 text-center">
         <p>Or, let us connect on:</p>
-        <div className="flex justify-center items-center h-32">
-          {linksToSocials.map(({ link, image }) => (
-            <SocialLinkCard link={link} image={image} />
-          ))}
-        </div>
+        <SocialLinks />
         <p>
           Made with love by @<span className="font-bold">Merkim</span>
         </p>

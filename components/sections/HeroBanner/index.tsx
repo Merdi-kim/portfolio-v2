@@ -3,10 +3,11 @@ import { linksToSocials } from '../../../data/data';
 import ArticleCard from '../../cards/ArticleCard';
 import SocialLinkCard from '../../cards/SocialLinkCard';
 import TitleCard from '../../cards/TitleCard';
+import SocialLinks from '../SocialLinks';
 
 const HeroBanner = () => {
   return (
-    <div className=" h-full md:h-[calc(100vh-3.5rem)] ">
+    <div className=" h-full">
       <div className="flex justify-center">
         <div className="flex-1 flex flex-col justify-center items-center py-20 mb-6 md:h-60 md:items-start md:flex-none md:w-[65%] md:py-0 md:pl-3 lg:pl-16">
           <h1 className="text-[50px] font-bold md:text-[60px] lg:text-[70px]">
@@ -23,6 +24,9 @@ const HeroBanner = () => {
               Content creator🗞
             </span>
           </section>
+          <div className="md:hidden">
+            <SocialLinks />
+          </div>
         </div>
         <div className="hidden md:block w-[35%] h-60 border-2 border-solid">
           <iframe
@@ -34,7 +38,7 @@ const HeroBanner = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row">
-        <div className="w-full tex-sm px-4 sm:px-20 md:w-1/2 flex flex-col justify-center md:px-2 lg:px-16">
+        <div className="w-full tex-sm px-4 sm:px-20 md:w-1/2 flex flex-col items-center justify-center md:px-2 lg:px-16">
           <TitleCard text="About me" />
           <p>
             I am a software engineer with experience in secure and scalable
@@ -45,17 +49,15 @@ const HeroBanner = () => {
             flawless experience.
           </p>
         </div>
-        <div className="w-full px-20 md:w-1/2 p-10">
+        <div className="flex flex-col items-center w-full px-20 md:w-1/2 p-10">
           <TitleCard text="Articles" />
           <div className="pt-6 h-64">
             <ArticleCard />
           </div>
         </div>
       </div>
-      <div className="hidden md:flex justify-center items-center h-32">
-        {linksToSocials.map(({ link, image }) => (
-          <SocialLinkCard key={link} link={link} image={image} />
-        ))}
+      <div className="hidden md:block">
+        <SocialLinks />
       </div>
       <div className="h-8 flex items-center justify-center">
         <span className="hidden md:arrow__down"></span>
