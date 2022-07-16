@@ -3,7 +3,7 @@ import SkillCard from '../../cards/SkillCard';
 import TitleCard from '../../cards/TitleCard';
 import SkillBulletPoint from './SkillBulletPoint';
 
-function Skills() {
+const Skills = () => {
   const softSkillsList = (
     <>
       {softSkills.map(skill => (
@@ -31,6 +31,6 @@ function Skills() {
       </div>
     </div>
   );
-}
+};
 
 export default Skills;

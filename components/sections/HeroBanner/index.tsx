@@ -38,9 +38,9 @@ const HeroBanner = () => {
           <TitleCard text="About me" />
           <p>
             I am a software engineer with experience in secure and scalable
-            software. I'm comfortable working with a variety of technologies and
-            I'm always available to learn and adapt to new technologies along
-            the way. Together in teams, I have worked on applications with
+            software. I am comfortable working with a variety of technologies
+            and I am always available to learn and adapt to new technologies
+            along the way. Together in teams, I have worked on applications with
             thousands of users. I always focus on providing users with a
             flawless experience.
           </p>
@@ -54,7 +54,7 @@ const HeroBanner = () => {
       </div>
       <div className="hidden md:flex justify-center items-center h-32">
         {linksToSocials.map(({ link, image }) => (
-          <SocialLinkCard link={link} image={image} />
+          <SocialLinkCard key={link} link={link} image={image} />
         ))}
       </div>
       <div className="h-8 flex items-center justify-center">

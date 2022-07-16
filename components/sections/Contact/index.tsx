@@ -3,7 +3,7 @@ import { linksToSocials } from '../../../data/data';
 import SocialLinkCard from '../../cards/SocialLinkCard';
 import TitleCard from '../../cards/TitleCard';
 
-function Contact() {
+const Contact = () => {
   const inputStyle =
     'h-8 w-11/12 mb-4 rounded-lg border-none outline-none pl-2';
 
@@ -11,7 +11,7 @@ function Contact() {
     <div className="flex flex-col items-center p-4">
       <TitleCard text="Contact" />
       <p className="mt-4 mb-8">
-        Want to talk about something, anything or just say hi... I'd like to
+        Want to talk about something, anything or just say hi... I would like to
         hear from you 📩{' '}
       </p>
       <form className="flex flex-col items-center w-full p-4 rounded-xl sm:w-10/12 md:w-1/2 lg:w-5/12 bg-gray-300">
@@ -50,6 +50,6 @@ function Contact() {
       </div>
     </div>
   );
-}
+};
 
 export default Contact;

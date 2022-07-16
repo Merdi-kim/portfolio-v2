@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from '../../cards/ProjectCard';
 import TitleCard from '../../cards/TitleCard';
 
-function Projects() {
+const Projects = () => {
   return (
     <div className="flex flex-col items-center">
       <TitleCard text="Projects" />
@@ -15,6 +15,6 @@ function Projects() {
       </div>
     </div>
   );
-}
+};
 
 export default Projects;
