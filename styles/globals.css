@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
 
 html {
   --primary-color: rgb(21, 166, 238);
@@ -37,5 +38,5 @@ html {
   left: 50%;
   height: 100%;
   width: 2px;
-  background-color: black;
+  background-color: var(--primary-color);
 }

@@ -7,7 +7,7 @@ interface Props {
 const ProjectCard: FC<Props> = ({ right }) => {
   return (
     <div
-      className={`h-80 w-80 bg-slate-500 rounded-lg relative mb-6 md:mb-0 ${
+      className={`h-80 w-80 bg-slate-200 rounded-lg relative mb-6 md:mb-0 ${
         right
           ? 'ml-[calc(50%-10rem)] md:ml-[calc(50%+4rem)]'
           : 'ml-[calc(50%-10rem)] md:ml-[calc(50%-24rem)]'

@@ -26,10 +26,10 @@ export const linksToSocials = [
     image: '/assets/images/twitter.png',
     link: 'https://twitter.com/KimMerdi',
   },
-  {
+  /*{
     image: '/assets/images/youtube.svg',
     link: 'https://www.youtube.com/c/Merkimdev',
-  },
+  },*/
 ];
 
 export const softSkills = ['Team player', 'etc'];

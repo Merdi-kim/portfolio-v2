@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         primary: 'var(--primary-color)',
       },
+      fontFamily: {
+        primary: ['Yanone Kaffeesatz', 'sans-serif'],
+      },
     },
   },
   plugins: [],
