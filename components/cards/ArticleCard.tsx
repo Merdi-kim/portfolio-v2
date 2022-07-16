@@ -4,9 +4,9 @@ const ArticleCard = () => {
       <img
         src="https://cdn-blog.novoresume.com/articles/how-to-find-a-job-after-rehab/bg-mid.png"
         alt=""
-        className="flex-none w-1/2 md:w-full lg:w-1/2 h-full rounded-lg bg-gray-300"
+        className="flex-none w-full sm:w-1/2 md:w-full lg:w-1/2 h-full rounded-lg bg-gray-300"
       />
-      <div className=" overflow-hidden p-4 md:hidden lg:block">
+      <div className=" overflow-hidden p-4 hidden sm:block md:hidden lg:block">
         <h2 className="font-bold mb-4">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
           reprehenderit aut optio

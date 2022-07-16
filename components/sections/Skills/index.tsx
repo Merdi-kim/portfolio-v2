@@ -22,7 +22,7 @@ function Skills() {
   return (
     <div className="flex flex-col items-center p-16 ">
       <TitleCard text="Skills" />
-      <div className="flex w-11/12 py-8">
+      <div className="flex flex-col md:flex-row w-11/12 py-8">
         <SkillCard
           title={'Engineering skills'}
           skillsList={engineeringSkillsList}
