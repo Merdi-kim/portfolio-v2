@@ -9,7 +9,7 @@ const HeroBanner = () => {
   return (
     <div className=" h-full">
       <div className="flex justify-center">
-        <div className="flex-1 flex flex-col justify-center items-center py-20 mb-6 md:h-60 md:items-start md:flex-none md:w-[65%] md:py-0 md:pl-3 lg:pl-16">
+        <div className="flex-1 flex flex-col justify-center items-center py-8 sm:py-20 md:h-60 md:items-start md:flex-none md:w-[65%] md:py-0 md:pl-3 lg:pl-16">
           <h1 className="text-[50px] font-bold md:text-[60px] lg:text-[70px]">
             Merdi Kim
           </h1>
@@ -49,7 +49,7 @@ const HeroBanner = () => {
             flawless experience.
           </p>
         </div>
-        <div className="flex flex-col items-center w-full px-20 md:w-1/2 p-10">
+        <div className="flex flex-col items-center w-full md:w-1/2 p-10">
           <TitleCard text="Articles" />
           <div className="pt-6 h-64">
             <ArticleCard />
@@ -58,9 +58,6 @@ const HeroBanner = () => {
       </div>
       <div className="hidden md:block">
         <SocialLinks />
-      </div>
-      <div className="h-8 flex items-center justify-center">
-        <span className="hidden md:arrow__down"></span>
       </div>
     </div>
   );

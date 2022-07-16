@@ -1,6 +1,6 @@
 const ArticleCard = () => {
   return (
-    <div className="flex h-[98%] w-full border-solid border-2 border-red-600 rounded-lg">
+    <div className="flex h-[98%] w-full border-solid border-2 border-primary rounded-lg">
       <img
         src="https://cdn-blog.novoresume.com/articles/how-to-find-a-job-after-rehab/bg-mid.png"
         alt=""

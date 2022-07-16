@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --primary-color: rgb(21, 166, 238);
+}
+
 .titleCard {
   font-weight: bolder;
   margin-bottom: 1rem;
@@ -17,28 +21,7 @@
   content: '';
   width: 20px;
   height: 5px;
-  background-color: blue;
-}
-
-.arrow__down {
-  height: 12px;
-  width: 50px;
-  background-color: black;
-  transform: rotate(30deg);
-  position: relative;
-  border-radius: 12px;
-}
-
-.arrow__down:before {
-  position: absolute;
-  top: -19px;
-  left: 30px;
-  content: '';
-  height: 12px;
-  width: 50px;
-  background-color: black;
-  transform: rotate(115deg);
-  border-radius: 12px;
+  background-color: var(--primary-color);
 }
 
 .projects {

@@ -31,16 +31,19 @@ const Contact = () => {
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white rounded-lg px-4 py-2 mt-8"
+          className="bg-primary text-white rounded-lg px-4 py-2 mt-8"
         >
           Send message
         </button>
       </form>
-      <div className="my-12 text-center">
+      <div className="my-6 text-center">
         <p>Or, let us connect on:</p>
         <SocialLinks />
         <p>
-          Made with love by @<span className="font-bold">Merkim</span>
+          Made with love by @
+          <span className="font-bold p-1 border-solid border-b-2 border-b-primary ">
+            Merkim
+          </span>
         </p>
       </div>
     </div>

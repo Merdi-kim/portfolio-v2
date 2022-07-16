@@ -20,9 +20,9 @@ const Skills = () => {
   );
 
   return (
-    <div className="flex flex-col items-center p-16 ">
+    <div className="flex flex-col items-center p-2  sm:p-16 ">
       <TitleCard text="Skills" />
-      <div className="flex flex-col md:flex-row w-11/12 py-8">
+      <div className="flex flex-col items-center md:flex-row md:justify-between md:items-start  w-11/12 py-8">
         <SkillCard
           title={'Engineering skills'}
           skillsList={engineeringSkillsList}
