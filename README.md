@@ -1,4 +1,4 @@
-# Merdi Kim official website
+# Merdi Kim official website ⛳️
 
 This website is built with:
 
