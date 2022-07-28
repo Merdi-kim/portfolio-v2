@@ -32,7 +32,7 @@ export const linksToSocials = [
   },*/
 ];
 
-export const softSkills = ['Team player', 'etc'];
+export const softSkills = ['Team player', 'Collaboration', 'etc'];
 
 export const engineeringSkills = [
   'Understanding of software architecture',
