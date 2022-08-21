@@ -2,6 +2,7 @@ import React from 'react';
 import ArticleCard from '../../cards/ArticleCard';
 import TitleCard from '../../cards/TitleCard';
 import SocialLinks from '../SocialLinks';
+import { Carousel } from 'react-responsive-carousel';
 
 const HeroBanner = () => {
   return (
@@ -12,13 +13,13 @@ const HeroBanner = () => {
             Merdi Kim
           </h1>
           <section className="flex">
-            <span className="text-[12px] mx-2 sm:mx-3 md:text-md lg:text-lg">
+            <span className="text-[12px] text-center mx-2 sm:mx-3 md:text-md lg:text-lg">
               Software engineer⛓
             </span>
-            <span className="text-[12px] mx-2 sm:mx-3 md:text-md lg:text-lg">
+            <span className="text-[12px] text-center mx-2 sm:mx-3 md:text-md lg:text-lg">
               Protocols tester🛠
             </span>
-            <span className="text-[12px] mx-2 sm:mx-3 md:text-md lg:text-lg">
+            <span className="text-[12px] text-center mx-2 sm:mx-3 md:text-md lg:text-lg">
               Content creator🗞
             </span>
           </section>
@@ -49,8 +50,12 @@ const HeroBanner = () => {
         </div>
         <div className="flex flex-col items-center w-full md:w-1/2 p-10">
           <TitleCard text="Articles" />
-          <div className="pt-6 h-64">
-            <ArticleCard />
+          <div className=" h-64 flex justify-center">
+            <Carousel autoPlay>
+              <ArticleCard />
+              <ArticleCard />
+              <ArticleCard />
+            </Carousel>
           </div>
         </div>
       </div>

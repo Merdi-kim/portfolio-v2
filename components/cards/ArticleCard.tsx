@@ -1,12 +1,12 @@
 const ArticleCard = () => {
   return (
-    <div className="flex h-[98%] w-full border-solid border-2 border-primary rounded-lg">
+    <div className="flex h-64  w-[100%] bg-red-400 border-solid border-2 border-primary rounded-lg">
       <img
         src="https://cdn-blog.novoresume.com/articles/how-to-find-a-job-after-rehab/bg-mid.png"
         alt=""
-        className="flex-none w-full sm:w-1/2 md:w-full lg:w-1/2 h-full rounded-lg bg-gray-300"
+        className="flex-none w-full sm:w-[50%] md:w-full lg:w-[50%] rounded-lg"
       />
-      <div className=" overflow-hidden p-4 hidden sm:block md:hidden lg:block">
+      <div className=" overflow-hidden p-4 hidden">
         <h2 className="font-bold mb-4">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
           reprehenderit aut optio
@@ -23,3 +23,5 @@ const ArticleCard = () => {
 };
 
 export default ArticleCard;
+
+//overflow-hidden p-4 hidden sm:block md:hidden lg:block

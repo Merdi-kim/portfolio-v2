@@ -7,7 +7,7 @@ const Contact = () => {
     'h-8 w-11/12 mb-4 rounded-lg border-none outline-none pl-2';
 
   return (
-    <div className="flex flex-col items-center p-4">
+    <div id="contact" className="flex flex-col items-center p-4">
       <TitleCard text="Contact" />
       <p className="mt-4 mb-8">
         Want to talk about something, anything or just say hi... I would like to

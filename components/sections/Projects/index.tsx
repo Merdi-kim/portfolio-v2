@@ -4,7 +4,7 @@ import TitleCard from '../../cards/TitleCard';
 
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div id="projects" className="flex flex-col items-center">
       <TitleCard text="Projects" />
       <p>Here is where I have fun building</p>
       <div className="projects">

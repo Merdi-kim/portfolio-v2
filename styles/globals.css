@@ -5,6 +5,7 @@
 
 html {
   --primary-color: rgb(21, 166, 238);
+  scroll-behavior: smooth;
 }
 
 .titleCard {
