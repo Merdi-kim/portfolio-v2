@@ -39,7 +39,7 @@ const HeroBanner = () => {
       <div className="flex flex-col md:flex-row">
         <div className="w-full tex-sm px-4 sm:px-20 md:w-1/2 flex flex-col items-center justify-center md:px-2 lg:px-16">
           <TitleCard text="About me" />
-          <p className="font-primary">
+          <p className="font-primary font-light text-sm sm:text-lg">
             I am a software engineer with experience in secure and scalable
             software. I am comfortable working with a variety of technologies
             and I am always available to learn and adapt to new technologies
