@@ -1,13 +1,14 @@
 import React from 'react';
 import ArticleCard from '../../cards/ArticleCard';
-import TitleCard from '../../cards/TitleCard';
 import SocialLinks from '../SocialLinks';
 import { Carousel } from 'react-responsive-carousel';
+import { IPostCardProps, IPostNode } from '../../../types';
+import TitleCard from '../../cards/TitleCard';
 
-const HeroBanner = () => {
+const HeroBanner = ({ posts }: IPostCardProps) => {
   return (
     <div className=" h-full">
-      <div className="flex justify-center">
+      <div className="flex justify-center sm:pt-20">
         <div className="flex-1 flex flex-col justify-center items-center py-8 sm:py-20 md:h-60 md:items-start md:flex-none md:w-[65%] md:py-0 md:pl-3 lg:pl-16">
           <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-900 text-[50px] font-primary md:text-[60px] lg:text-[70px]">
             Merdi Kim
@@ -27,13 +28,12 @@ const HeroBanner = () => {
             <SocialLinks />
           </div>
         </div>
-        <div className="hidden md:block w-[35%] h-60 border-2 border-solid">
-          <iframe
-            src="https://my.spline.design/roomrelaxingcopy-a72e6ba66f5ca75234e31090c70a990c/"
-            frameBorder="0"
-            width="100%"
-            height="100%"
-          ></iframe>
+        <div className="hidden md:flex w-[35%] items-center justify-center h-60">
+          <img
+            src="https://cdn3d.iconscout.com/3d/premium/thumb/male-3311665-2754834.png"
+            className="h-full"
+            alt=""
+          />
         </div>
       </div>
       <div className="flex flex-col md:flex-row">
@@ -48,14 +48,17 @@ const HeroBanner = () => {
             flawless experience.
           </p>
         </div>
-        <div className="flex flex-col items-center w-full md:w-1/2 p-10">
+        <div className="flex flex-col items-center w-full md:w-1/2 p-4 sm:p-10">
           <TitleCard text="Articles" />
-          <div className=" h-64 flex justify-center">
-            <Carousel autoPlay>
-              <ArticleCard />
-              <ArticleCard />
-              <ArticleCard />
-            </Carousel>
+          <div
+            className={
+              '' /*" h-80 w-inherit md:h-64 flex bg-green-500 justify-center"*/
+            }
+          >
+            <ArticleCard post={posts[1].node} />
+            {/*<Carousel className='bg-green-400 w-full'>
+              {posts?.map((post:IPostNode) => <ArticleCard key={post.node.title} post={post.node} />)}
+            </Carousel>*/}
           </div>
         </div>
       </div>

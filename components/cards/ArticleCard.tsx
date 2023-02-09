@@ -1,27 +1,34 @@
-const ArticleCard = () => {
+import React from 'react';
+import Link from 'next/link';
+import { IArticleProps } from '../../types';
+
+function ArticleCard({ post }: IArticleProps) {
   return (
-    <div className="flex-none flex h-64  w-[100%] bg-gray-100 overflow-hidden rounded-lg">
-      <div className="flex-none w-full sm:w-[50%] md:w-full lg:w-[50%] rounded-lg">
+    <div className="h-[24rem] w-full sm:h-[20rem] lg:h-60 sm:w-[55vw]  md:w-[40vw] flex flex-col lg:flex-row  bg-black shadow-lg rounded-lg p-2 sm:p-4">
+      <div className="w-full h-[10rem] lg:h-full lg:w-[40%] relative overflow-hidden shadow-md">
         <img
-          src="https://cdn-blog.novoresume.com/articles/how-to-find-a-job-after-rehab/bg-mid.png"
-          alt="article cover"
-          className="w-full h-full"
+          src={post.featuredImage.url}
+          alt={post.title}
+          className="w-full h-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
         />
       </div>
-
-      <div className=" overflow-hidden p-4 hidden sm:block md:hidden lg:block">
-        <h2 className="font-bold mb-4">
-          Smart contracts best practices | solidity best practices
-        </h2>
-        <p className="font-light text-xs">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          tenetur, saepe, fugit dolor dicta vitae maiores adipisci quod
-          praesentium excepturi, atque eligendi nemo sunt animi nostrum quidem
-          ad exercitationem voluptas.
+      <div className="w-full lg:w-[60%] relative">
+        <h1 className="transition duration-700 text-white text-center px-2 mt-2 md:mt-0 sm:mb-2 md:mb-4 cursor-pointer text-xl sm:text-2xl font-semibold">
+          <Link href={`/post/${post.slug}`}>{post.title}</Link>
+        </h1>
+        <p className="text-center lg:text-sm text-gray-400 font-normal px-4 xl:px-18 line-clamp-3">
+          {post.excerpt}
         </p>
+        <div className="text-right mt-4">
+          <Link href={`post/${post.slug}`}>
+            <span className="transition text-white duration-500 transform hover:-translate-y-1 inline-block text-main-color lg:text-sm xl:text-lg font-medium rounded-lg border-b-2 cursor-pointer hover:font-bold">
+              Read more
+            </span>
+          </Link>
+        </div>
       </div>
     </div>
   );
-};
+}
 
 export default ArticleCard;
