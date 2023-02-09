@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
 
 html {
-  --primary-color: rgb(21, 166, 238);
+  --primary-color: #04041d;
   scroll-behavior: smooth;
 }
 
@@ -23,7 +23,7 @@ html {
   content: '';
   width: 20px;
   height: 5px;
-  background-color: var(--primary-color);
+  background-color: rgb(147 197 253);
 }
 
 .projects {
@@ -39,5 +39,5 @@ html {
   left: 50%;
   height: 100%;
   width: 2px;
-  background-color: var(--primary-color);
+  background-color: #1e1e21;
 }

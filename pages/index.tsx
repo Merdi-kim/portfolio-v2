@@ -12,7 +12,7 @@ const Home: NextPage = ({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <div className="">
+    <div className="bg-main text-white">
       <Head>
         <title>Merkim | Software engineering</title>
         <link rel="icon" href="/favicon.ico" />

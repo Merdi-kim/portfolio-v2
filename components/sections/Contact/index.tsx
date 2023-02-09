@@ -16,7 +16,7 @@ const Contact = () => {
         <SocialLinks />
         <p>
           Made with love by @
-          <span className="font-bold p-1 border-solid border-b-2 border-b-primary ">
+          <span className="font-bold p-1 border-solid border-b-2 border-b-primary text-blue-500">
             Merdi Kim
           </span>
         </p>
