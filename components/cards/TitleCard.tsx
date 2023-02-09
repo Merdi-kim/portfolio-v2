@@ -1,10 +1,7 @@
 import { FC } from 'react';
+import { ITitleCardProp } from '../../types';
 
-interface Prop {
-  text: string;
-}
-
-const TitleCard: FC<Prop> = ({ text }) => {
+const TitleCard: FC<ITitleCardProp> = ({ text }) => {
   return <h2 className="titleCard">{text}</h2>;
 };
 

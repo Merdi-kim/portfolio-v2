@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         primary: ['Yanone Kaffeesatz', 'sans-serif'],
       },
+      backgroundImage: {
+        imageOne: "url('/assets/images/dummy.png')",
+      },
     },
   },
   plugins: [require('@tailwindcss/line-clamp')],

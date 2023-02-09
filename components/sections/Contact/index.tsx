@@ -8,7 +8,7 @@ const Contact = () => {
       <TitleCard text="Contact" />
       <p className="mt-4 mb-8">
         Want to talk about something, anything or just say hi... I would like to
-        hear from you 📩{' '}
+        hear from you. Email me at <b>merdikimuha1@gmail.com</b> 📩{' '}
       </p>
 
       <div className="my-6 text-center">
@@ -17,7 +17,7 @@ const Contact = () => {
         <p>
           Made with love by @
           <span className="font-bold p-1 border-solid border-b-2 border-b-primary ">
-            Merkim
+            Merdi Kim
           </span>
         </p>
       </div>

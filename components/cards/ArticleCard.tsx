@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 import { IArticleProps } from '../../types';
 
-function ArticleCard({ post }: IArticleProps) {
+const ArticleCard: FC<IArticleProps> = ({ post }) => {
   return (
     <div className="h-[24rem] w-full sm:h-[20rem] lg:h-60 sm:w-[55vw]  md:w-[40vw] flex flex-col lg:flex-row  bg-black shadow-lg rounded-lg p-2 sm:p-4">
       <div className="w-full h-[10rem] lg:h-full lg:w-[40%] relative overflow-hidden shadow-md">
@@ -29,6 +29,6 @@ function ArticleCard({ post }: IArticleProps) {
       </div>
     </div>
   );
-}
+};
 
 export default ArticleCard;

@@ -1,11 +1,7 @@
 import { FC } from 'react';
+import { ISocialLinkCardProps } from '../../types';
 
-interface Props {
-  link: string;
-  image: string;
-}
-
-const SocialLinkCard: FC<Props> = ({ link, image }) => {
+const SocialLinkCard: FC<ISocialLinkCardProps> = ({ link, image }) => {
   return (
     <a href={link} target={'_blank'} className="mx-4 hover:scale-105">
       <img

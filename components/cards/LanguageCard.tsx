@@ -1,10 +1,7 @@
 import React, { FC } from 'react';
+import { ILanguageProp } from '../../types';
 
-interface Prop {
-  link: string;
-}
-
-const LanguageCard: FC<Prop> = ({ link }) => {
+const LanguageCard: FC<ILanguageProp> = ({ link }) => {
   return (
     <img
       src={link}

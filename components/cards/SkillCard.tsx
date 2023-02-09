@@ -1,11 +1,7 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
+import { ISkillCardProps } from '../../types';
 
-interface Props {
-  title: string;
-  skillsList: ReactNode;
-}
-
-const SkillCard: FC<Props> = ({ title, skillsList }) => {
+const SkillCard: FC<ISkillCardProps> = ({ title, skillsList }) => {
   return (
     <div className="flex-none h-full w-full bg-gray-200 mb-10 mx-1 sm:w-[80%] md:mb-0  md:w-[50%] lg:w-[40%] p-4 rounded-lg">
       <h3 className="font-semibold text-[16px]">{title}</h3>
