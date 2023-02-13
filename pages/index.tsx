@@ -15,6 +15,7 @@ const Home: NextPage = ({
     <div className="bg-main text-white">
       <Head>
         <title>Merkim | Software engineering</title>
+        <meta name="description" content="Merdi Kim is a software enginneer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeroBanner posts={posts} />
