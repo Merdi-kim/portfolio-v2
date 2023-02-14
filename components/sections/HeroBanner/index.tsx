@@ -10,7 +10,7 @@ const HeroBanner = ({ posts }: IPostCardProps) => {
     <div className="h-full lg:bg-heroBanner lg:bg-cover">
       <div className="flex justify-center sm:pt-20 bg-heroBanner bg-cover lg:bg-none">
         <div className="flex-1 flex flex-col justify-center items-center py-8 sm:py-20 md:h-60 md:items-start md:flex-none md:w-[65%] md:py-0 md:pl-3 lg:pl-16">
-          <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#83EAF1] to-[#63A4FF] text-[50px] font-primary md:text-[60px] lg:text-[70px]">
+          <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#00CCFF] text-[50px] font-primary md:text-[60px] lg:text-[70px]">
             Merdi Kim
           </h1>
           <section className="flex">

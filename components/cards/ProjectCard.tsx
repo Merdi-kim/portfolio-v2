@@ -32,7 +32,7 @@ const ProjectCard: FC<IProjectCardProps> = ({ right }) => {
         </div>
       </div>
       <span
-        className={`hidden md:block absolute top-40 h-[2px] w-16 bg-fading ${
+        className={`hidden md:block absolute top-40 h-[2px] w-16 bg-faded ${
           right ? 'right-full' : 'left-full'
         }`}
       ></span>

@@ -13,13 +13,18 @@ export const linksToSocials = [
   },
 ];
 
-export const softSkills = ['Team player', 'Collaboration', 'etc'];
+export const softSkills = [
+  'Strong work ethic',
+  'Team collaboration',
+  'Attention to details',
+  'Analytical mindset',
+];
 
 export const engineeringSkills = [
-  'Understanding of software architecture',
-  'Clean code implementation',
-  'Quick learner',
-  'etc',
+  'Software engineering and development',
+  'Software architecture and testing',
+  'Modern clean code best practices',
+  'Quick learner and curious',
 ];
 
 export const languageImages = [
