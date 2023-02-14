@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         main: 'var(--primary-color)',
-        fading: '#1e1e21',
+        faded: '#002244',
       },
       fontFamily: {
         primary: ['Yanone Kaffeesatz', 'sans-serif'],

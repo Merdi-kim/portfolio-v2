@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div id="contact" className="flex flex-col items-center p-4">
       <TitleCard text="Contact" />
-      <p className="mt-4 mb-8">
+      <p className="mt-4 text-center mb-8">
         Want to talk about something, anything or just say hi... I would like to
         hear from you. Email me at <b>merdikimuha1@gmail.com</b> 📩{' '}
       </p>
