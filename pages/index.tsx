@@ -5,7 +5,7 @@ import HeroBanner from '../components/sections/HeroBanner';
 import Languages from '../components/sections/Languages';
 import Projects from '../components/sections/Projects';
 import Skills from '../components/sections/Skills';
-import { getRecentPosts, getPosts } from '../services';
+import { getPosts } from '../services';
 import { IPostNode } from '../types';
 
 const Home: NextPage = ({
@@ -15,7 +15,10 @@ const Home: NextPage = ({
     <div className="bg-main text-white">
       <Head>
         <title>Merkim | Software engineering</title>
-        <meta name="description" content="Merdi Kim is a software enginneer" />
+        <meta
+          name="description"
+          content="Merdi Kim is a software engineer with experience in building secure and scalable software "
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeroBanner posts={posts} />

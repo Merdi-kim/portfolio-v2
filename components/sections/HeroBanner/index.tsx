@@ -1,8 +1,7 @@
 import React from 'react';
 import ArticleCard from '../../cards/ArticleCard';
 import SocialLinks from '../SocialLinks';
-import { Carousel } from 'react-responsive-carousel';
-import { IPostCardProps, IPostNode } from '../../../types';
+import { IPostCardProps } from '../../../types';
 import TitleCard from '../../cards/TitleCard';
 
 const HeroBanner = ({ posts }: IPostCardProps) => {
@@ -40,25 +39,18 @@ const HeroBanner = ({ posts }: IPostCardProps) => {
         <div className="w-full tex-sm px-4 sm:px-20 md:w-1/2 flex flex-col items-center justify-center md:px-2 lg:px-16">
           <TitleCard text="About me" />
           <p className="font-primary font-light text-sm sm:text-lg">
-            I am a software engineer with experience in secure and scalable
-            software. I am comfortable working with a variety of technologies
-            and I am always available to learn and adapt to new technologies
-            along the way. Together in teams, I have worked on applications with
-            thousands of users. I always focus on providing users with a
-            flawless experience.
+            I am a software engineer with experience in building secure and
+            scalable software. I am comfortable working with a variety of
+            technologies and I am always available to learn and adapt to new
+            technologies along the way. Together in teams, I have worked on
+            applications with thousands of users. I always focus on providing
+            users with a flawless experience.
           </p>
         </div>
         <div className="flex flex-col items-center w-full md:w-1/2 p-4 sm:p-10">
           <TitleCard text="Articles" />
-          <div
-            className={
-              '' /*" h-80 w-inherit md:h-64 flex bg-green-500 justify-center"*/
-            }
-          >
+          <div className={''}>
             <ArticleCard post={posts[1]?.node} />
-            {/*<Carousel className='bg-green-400 w-full'>
-              {posts?.map((post:IPostNode) => <ArticleCard key={post.node.title} post={post.node} />)}
-            </Carousel>*/}
           </div>
         </div>
       </div>
