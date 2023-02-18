@@ -1,4 +1,4 @@
-import { linksToSocials } from '../../../data/data';
+import { linksToSocials } from '../../../data';
 import SocialLinkCard from '../../cards/SocialLinkCard';
 
 function SocialLinks() {

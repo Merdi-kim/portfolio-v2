@@ -1,5 +1,5 @@
 import React from 'react';
-import { languageImages } from '../../../data/data';
+import { languageImages } from '../../../data';
 import LanguageCard from '../../cards/LanguageCard';
 
 const Languages = () => {

@@ -41,6 +41,12 @@ export interface ILanguageProp {
 /***** Project card props *****/
 export interface IProjectCardProps {
   right?: boolean;
+  project: {
+    name: string;
+    description: string;
+    website: string;
+    github: string;
+  };
 }
 
 /***** SkillCard props *****/

@@ -1,4 +1,4 @@
-import { softSkills, engineeringSkills } from '../../../data/data';
+import { softSkills, engineeringSkills } from '../../../data';
 import SkillCard from '../../cards/SkillCard';
 import TitleCard from '../../cards/TitleCard';
 import SkillBulletPoint from './SkillBulletPoint';

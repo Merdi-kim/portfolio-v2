@@ -19,7 +19,7 @@ const ArticleCard: FC<IArticleProps> = ({ post }) => {
         <p className="text-center lg:text-sm text-gray-400 font-normal px-4 xl:px-18 line-clamp-3">
           {post?.excerpt}
         </p>
-        <div className="text-right mt-4">
+        <div className="text-right mt-10">
           <Link href={`post/${post?.slug}`}>
             <span className="transition text-white duration-500 transform hover:-translate-y-1 inline-block text-main-color lg:text-sm xl:text-lg font-medium rounded-lg border-b-2 cursor-pointer hover:font-bold">
               Read more
