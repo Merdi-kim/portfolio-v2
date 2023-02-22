@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ILanguageProp } from '../../types';
+import { ILanguageProp } from '../../interfaces';
 
 const LanguageCard: FC<ILanguageProp> = ({ link }) => {
   return (

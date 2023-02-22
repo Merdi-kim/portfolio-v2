@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ISkillCardProps } from '../../types';
+import { ISkillCardProps } from '../../interfaces';
 
 const SkillCard: FC<ISkillCardProps> = ({ title, skillsList }) => {
   return (

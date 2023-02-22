@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
-import { IArticleProps } from '../../types';
+import { IArticleProps } from '../../interfaces';
 
 const ArticleCard: FC<IArticleProps> = ({ post }) => {
   return (

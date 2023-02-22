@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ISkillBulletPointProps } from '../../../types';
+import { ISkillBulletPointProps } from '../../../interfaces';
 
 const SkillBulletPoint: FC<ISkillBulletPointProps> = ({ text }) => {
   return (

@@ -1,37 +1,22 @@
 import { ReactNode } from 'react';
 
-export interface IPostNode {
-  node: IPost;
-}
-
-/***** post layout *****/
-export interface IPost {
-  author: {
-    id: string;
-    name: string;
-    photo: {
-      url: string;
-    };
-  };
-  createdAt: string;
-  slug: string;
-  title: string;
-  excerpt: string;
-  categories: [];
-  featuredImage: {
-    url: string;
-  };
-}
-
 /***** postCard props *****/
 
 export interface IPostCardProps {
-  posts: IPostNode[];
+  posts: IArticleProps[];
 }
 
 /***** Article props *****/
 export interface IArticleProps {
-  post: IPost;
+  post: {
+    title: string;
+    slug: string;
+    excerpt: string;
+    featuredImage: {
+      url: string;
+    };
+    createdAt: string;
+  };
 }
 /***** Language props *****/
 export interface ILanguageProp {

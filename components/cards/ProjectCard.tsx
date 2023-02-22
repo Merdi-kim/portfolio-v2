@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { FC } from 'react';
-import { IProjectCardProps } from '../../types';
+import { IProjectCardProps } from '../../interfaces';
 
 const ProjectCard: FC<IProjectCardProps> = ({ right, project }) => {
   return (

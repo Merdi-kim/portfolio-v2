@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ISocialLinkCardProps } from '../../types';
+import { ISocialLinkCardProps } from '../../interfaces';
 
 const SocialLinkCard: FC<ISocialLinkCardProps> = ({ link, image }) => {
   return (

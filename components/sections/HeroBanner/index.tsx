@@ -1,7 +1,7 @@
 import React from 'react';
 import ArticleCard from '../../cards/ArticleCard';
 import SocialLinks from '../SocialLinks';
-import { IPostCardProps } from '../../../types';
+import { IPostCardProps } from '../../../interfaces';
 import TitleCard from '../../cards/TitleCard';
 
 const HeroBanner = ({ posts }: IPostCardProps) => {
@@ -50,7 +50,7 @@ const HeroBanner = ({ posts }: IPostCardProps) => {
         <div className="flex flex-col items-center w-full md:w-1/2 p-4 sm:p-10">
           <TitleCard text="Articles" />
           <div className={''}>
-            <ArticleCard post={posts[1]?.node} />
+            <ArticleCard post={posts[0]} />
           </div>
         </div>
       </div>

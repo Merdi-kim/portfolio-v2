@@ -1,16 +1,19 @@
-import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import type {
+  GetServerSideProps,
+  InferGetServerSidePropsType,
+  NextPage,
+} from 'next';
 import Head from 'next/head';
 import Contact from '../components/sections/Contact';
 import HeroBanner from '../components/sections/HeroBanner';
 import Languages from '../components/sections/Languages';
 import Projects from '../components/sections/Projects';
 import Skills from '../components/sections/Skills';
-import { getPosts } from '../services';
-import { IPostNode } from '../types';
+import { getRecentPosts } from '../services';
 
 const Home: NextPage = ({
   posts,
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <div className="bg-main text-white">
       <Head>
@@ -32,8 +35,8 @@ const Home: NextPage = ({
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async () => {
-  const posts: IPostNode[] = await getPosts();
+export const getServerSideProps: GetServerSideProps = async () => {
+  const posts = await getRecentPosts();
 
   return {
     props: {
