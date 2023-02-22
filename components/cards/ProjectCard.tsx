@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React, { FC } from 'react';
 import { IProjectCardProps } from '../../interfaces';
 
@@ -17,16 +16,20 @@ const ProjectCard: FC<IProjectCardProps> = ({ right, project }) => {
           {project.description}
         </p>
         <div className="h-[2rem] flex justify-between w-full">
-          <Link href={`${project.website}`}>
-            <span className="h-11/12 w-5/12 cursor-pointer flex justify-center items-center rounded-lg bg-main hover:bg-blue-600 ">
-              Live
-            </span>
-          </Link>
-          <Link href={`${project.github}`}>
-            <span className="h-11/12 w-5/12 cursor-pointer flex justify-center items-center rounded-lg bg-main hover:bg-blue-600 ">
-              Code
-            </span>
-          </Link>
+          <a
+            className="h-11/12 w-5/12 cursor-pointer flex justify-center items-center rounded-lg bg-main hover:bg-blue-600"
+            target={'_blank'}
+            href={`${project.website}`}
+          >
+            <span>Live</span>
+          </a>
+          <a
+            className="h-11/12 w-5/12 cursor-pointer flex justify-center items-center rounded-lg bg-main hover:bg-blue-600"
+            target={'_blank'}
+            href={`${project.github}`}
+          >
+            <span>Code</span>
+          </a>
         </div>
       </div>
       <span

@@ -40,15 +40,15 @@ export const projects = [
   {
     name: 'Filecoin name service',
     description:
-      'Name service on the filecoin blockchain. All names are computed,mapped to addresses and stored on-chainkvbhenjbhvuefinjifvnjvedghfuvfhvnhbjfhieibuibibbiuiuifhjvhefbvuhbvhve',
-    website: '/hi',
-    github: '/hello',
+      'Name service on the filecoin blockchain. All names are computed,mapped to addresses and stored on-chain',
+    website: 'https://filecoin-name-service.vercel.app/',
+    github: 'https://github.com/Merdi-kim/filecoin-name-service-',
   },
   {
     name: 'Twitter Lens',
     description:
-      'Name service on the filecoin blockchain. All names are computed,mapped to addresses and stored on-chainkvbhenjbhvuefinjifvnjvedghfuvfhvnhbjfhieibuibibbiuiuifhjvhefbvuhbvhve',
-    website: '/hi',
-    github: '/hello',
+      'Twitter built on Lens Protocol infrastructure with wallet integration and decentralization model',
+    website: 'https://decentralized-twitter-clone.vercel.app/',
+    github: 'https://github.com/Merdi-kim/twitter-clone-LensProtocol',
   },
 ];

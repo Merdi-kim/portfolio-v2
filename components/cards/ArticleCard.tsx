@@ -16,15 +16,17 @@ const ArticleCard: FC<IArticleProps> = ({ post }) => {
         <h1 className="transition duration-700 text-white text-center px-2 mt-2 md:mt-0 sm:mb-2 md:mb-4 cursor-pointer text-xl sm:text-2xl font-semibold">
           <Link href={`/post/${post?.slug}`}>{post?.title || 'Not found'}</Link>
         </h1>
-        <p className="text-center lg:text-sm text-gray-400 font-normal px-4 xl:px-18 line-clamp-3">
+        <p className="text-center lg:text-[16px] text-gray-400 font-normal px-4 xl:px-18 line-clamp-3">
           {post?.excerpt}
         </p>
-        <div className="text-right mt-10">
-          <Link href={`post/${post?.slug}`}>
-            <span className="transition text-white duration-500 transform hover:-translate-y-1 inline-block text-main-color lg:text-sm xl:text-lg font-medium rounded-lg border-b-2 cursor-pointer hover:font-bold">
-              Read more
-            </span>
-          </Link>
+        <div className="text-right mt-10 lg:mt-8">
+          <a
+            className="transition text-white duration-500 transform hover:-translate-y-1 inline-block text-main-color lg:text-sm xl:text-lg font-medium rounded-lg border-b-2 cursor-pointer hover:font-bold"
+            target={'_blank'}
+            href={`post/${post?.slug}`}
+          >
+            <span>Read more</span>
+          </a>
         </div>
       </div>
     </div>

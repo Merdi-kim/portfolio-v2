@@ -11,7 +11,8 @@ module.exports = {
         faded: '#002244',
       },
       fontFamily: {
-        primary: ['Yanone Kaffeesatz', 'sans-serif'],
+        primary: ['Montserrat', 'sans-serif'],
+        secondary: ['Montserrat', 'sans-serif'],
       },
       backgroundImage: {
         heroBanner: "url('/assets/images/hero.svg')",

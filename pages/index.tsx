@@ -15,7 +15,7 @@ const Home: NextPage = ({
   posts,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
-    <div className="bg-main text-white">
+    <div className="bg-main text-white font-secondary">
       <Head>
         <title>Merkim | Software engineering</title>
         <meta
