@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import Link from 'next/link';
 import { IArticleProps } from '../../interfaces';
 
 const ArticleCard: FC<IArticleProps> = ({ post }) => {
@@ -14,7 +13,12 @@ const ArticleCard: FC<IArticleProps> = ({ post }) => {
       </div>
       <div className="w-full lg:w-[60%] relative">
         <h1 className="transition duration-700 text-white text-center px-2 mt-2 md:mt-0 sm:mb-2 md:mb-4 cursor-pointer text-xl sm:text-2xl font-semibold">
-          <Link href={`/post/${post?.slug}`}>{post?.title || 'Not found'}</Link>
+          <a
+            target={'_blank'}
+            href={`https://blog.merdikim.com//post/${post?.slug}`}
+          >
+            {post?.title || 'Not found'}
+          </a>
         </h1>
         <p className="text-center lg:text-[16px] text-gray-400 font-normal px-4 xl:px-18 line-clamp-3">
           {post?.excerpt}
@@ -23,7 +27,7 @@ const ArticleCard: FC<IArticleProps> = ({ post }) => {
           <a
             className="transition text-white duration-500 transform hover:-translate-y-1 inline-block text-main-color lg:text-sm xl:text-lg font-medium rounded-lg border-b-2 cursor-pointer hover:font-bold"
             target={'_blank'}
-            href={`post/${post?.slug}`}
+            href={`https://blog.merdikim.com/post/${post?.slug}`}
           >
             <span>Read more</span>
           </a>
