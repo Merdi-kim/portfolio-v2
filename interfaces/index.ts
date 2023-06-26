@@ -18,27 +18,6 @@ export interface IArticleProps {
     createdAt: string;
   };
 }
-/***** Language props *****/
-export interface ILanguageProp {
-  link: string;
-}
-
-/***** Project card props *****/
-export interface IProjectCardProps {
-  right?: boolean;
-  project: {
-    name: string;
-    description: string;
-    website: string;
-    github: string;
-  };
-}
-
-/***** SkillCard props *****/
-export interface ISkillCardProps {
-  title: string;
-  skillsList: ReactNode;
-}
 
 /***** socialLinkCard props *****/
 export interface ISocialLinkCardProps {
@@ -48,10 +27,5 @@ export interface ISocialLinkCardProps {
 
 /***** titleCard props *****/
 export interface ITitleCardProp {
-  text: string;
-}
-
-/***** skill bullet point prop *****/
-export interface ISkillBulletPointProps {
   text: string;
 }

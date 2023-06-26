@@ -4,31 +4,23 @@ import type {
   NextPage,
 } from 'next';
 import Head from 'next/head';
-import Contact from '../components/sections/Contact';
 import HeroBanner from '../components/sections/HeroBanner';
-import Languages from '../components/sections/Languages';
-import Projects from '../components/sections/Projects';
-import Skills from '../components/sections/Skills';
 import { getRecentPosts } from '../services';
 
 const Home: NextPage = ({
   posts,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
-    <div className="bg-main text-white font-secondary">
+    <div className="bg-main min-h-screen text-white font-secondary">
       <Head>
-        <title>Merkim | Software engineering</title>
+        <title>Merdi Kim | Software engineer</title>
         <meta
           name="description"
-          content="Merdi Kim is a software engineer with experience in building secure and scalable software "
+          content="Merdi Kim is a software engineer with experience in building secure and scalable software"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/profile.ico" />
       </Head>
       <HeroBanner posts={posts} />
-      <Skills />
-      <Projects />
-      <Languages />
-      <Contact />
     </div>
   );
 };

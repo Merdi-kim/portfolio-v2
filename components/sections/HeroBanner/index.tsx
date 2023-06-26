@@ -29,8 +29,8 @@ const HeroBanner = ({ posts }: IPostCardProps) => {
         </div>
         <div className="hidden md:flex w-[35%] items-center justify-center h-60">
           <img
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/male-3311665-2754834.png"
-            className="h-full"
+            src="/assets/images/profile.JPG"
+            className="h-60 w-60 object-cover rounded-[50%]"
             alt=""
           />
         </div>
@@ -48,7 +48,7 @@ const HeroBanner = ({ posts }: IPostCardProps) => {
           </p>
         </div>
         <div className="flex flex-col items-center w-full md:w-1/2 p-4 sm:p-10">
-          <TitleCard text="Articles" />
+          <TitleCard text="Latest article" />
           <div className={''}>
             {/*@ts-ignore */}
             <ArticleCard post={posts[0]} />

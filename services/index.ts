@@ -5,7 +5,7 @@ const gqlApi = process.env.NEXT_PUBLIC_GRAPH_CMS_ENDPOINT!;
 export const getRecentPosts = async () => {
   const query = gql`
     query GetRecentPosts {
-      posts(orderBy: createdAt_DESC, first: 2) {
+      posts(orderBy: createdAt_DESC, first: 1) {
         title
         slug
         excerpt
